@@ -118,9 +118,9 @@ func (f *Font) Printf(x, y float32, scale float32, align int32, blend bool, wind
 		//get rune
 		runeIndex := indices[i]
 
-		//skip runes that are not in font chacter range
+		//skip runes that are not in font character range
 		if int(runeIndex)-int(lowChar) > len(f.fontChar) || runeIndex < lowChar {
-			fmt.Printf("%c %d\n", runeIndex, runeIndex)
+			//fmt.Printf("%c %d\n", runeIndex, runeIndex)
 			continue
 		}
 
@@ -187,9 +187,9 @@ func (f *Font) Width(scale float32, fs string, argv ...interface{}) float32 {
 		//get rune
 		runeIndex := indices[i]
 
-		//skip runes that are not in font chacter range
+		//skip runes that are not in font character range
 		if int(runeIndex)-int(lowChar) > len(f.fontChar) || runeIndex < lowChar {
-			fmt.Printf("%c %d\n", runeIndex, runeIndex)
+			//fmt.Printf("%c %d\n", runeIndex, runeIndex)
 			continue
 		}
 
